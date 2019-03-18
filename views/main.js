@@ -4,6 +4,10 @@ var TITLE = 'book-finder - main'
 
 module.exports = view
 
+let span = document.createElement('span')
+let li = document.createElement('li').appendChild(span)
+const ul = document.getElementById('books').appendChild(li)
+
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
@@ -17,17 +21,12 @@ function view (state, emit) {
 
           <p>Title Of Books </p> :  
           
-            <section>
-            
-                <ul>${state.books.map(book => {
-                  return `<li data-id='${book.id}'>
-                    <span>${book.title}</span>
-                    <span>${book.subtitle}</span>
-                    </li>  
-                  `
-                }).join()}</ul>
+            <ul id="books"></ul>
+            <!-- TODO: Refactor list here, perhaps it might work..-->
+             ${state.books.map(function (book) {
+    span.innerHTML = `${book.title}`
+  })}
 
-            </section> 
 
            <input class="input-reset" id="books" name="books" type="text" />
           <button class="dim ph3 ba bw1 pv2 b--black pointer bg-white"
@@ -44,8 +43,7 @@ function view (state, emit) {
     emit('books:search', document.getElementById('books').textContent)
   }
 
-
-    // JSON.stringify(state.books[0].title, 0)
+  // JSON.stringify(state.books[0].title, 0)
 
   // function displayBooks () {
   //   state.books.map(function (bookInfo) {
