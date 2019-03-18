@@ -4,10 +4,6 @@ var TITLE = 'book-finder - main'
 
 module.exports = view
 
-let span = document.createElement('span')
-let li = document.createElement('li').appendChild(span)
-const ul = document.getElementById('books').appendChild(li)
-
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
@@ -21,11 +17,14 @@ function view (state, emit) {
 
           <p>Title Of Books </p> :  
           
-            <ul id="books"></ul>
+
             <!-- TODO: Refactor list here, perhaps it might work..-->
-             ${state.books.map(function (book) {
-    span.innerHTML = `${book.title}`
-  })}
+            
+                ${state.books.map(book => {
+    return `
+                    ${book.title}                     
+                  `
+  }).join('<br />')}
 
 
            <input class="input-reset" id="books" name="books" type="text" />
