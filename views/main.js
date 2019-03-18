@@ -24,13 +24,13 @@ function view (state, emit) {
     return `
                     ${book.title}                     
                   `
-  }).join('<br />')}
+  })}
 
-
-           <input class="input-reset" id="books" name="books" type="text" />
-          <button class="dim ph3 ba bw1 pv2 b--black pointer bg-white"
+    <!--TODO: CLEAR INPUT AFTER CLICKING BUTTON-->
+          <input class="input-reset" id="books" name="books" type="text" />
+          <button class="dim ph2-ns ba bw1 pv2 b--black pointer bg-white"
             onclick=${handleClick}>
-            Emit a click event
+            Search For A Book
           </button>
         </section>
 
@@ -41,13 +41,4 @@ function view (state, emit) {
   function handleClick () {
     emit('books:search', document.getElementById('books').textContent)
   }
-
-  // JSON.stringify(state.books[0].title, 0)
-
-  // function displayBooks () {
-  //   state.books.map(function (bookInfo) {
-  //   // eslint-disable-next-line no-return-assign
-  //     return document.getElementById('title').innerText = bookInfo.title
-  //   })
-  // }
 }
