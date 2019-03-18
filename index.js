@@ -11,6 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 app.use(require('./stores/clicks'))
+app.use(require('./stores/books'))
 
 app.route('/', require('./views/main'))
 app.route('/*', require('./views/404'))
