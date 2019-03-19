@@ -18,13 +18,7 @@ function view (state, emit) {
   return html`
     <body class="code lh-copy">
       <main class="pa3 cf center">
-        <section class="fl mw6 w-50-m w-third-l pa3">
-
-        <section class="fl mw6 w-50-m w-third-l pa3">
-     
-
           <p>Title Of Books </p> :  
-          
 
             <!-- TODO: Refactor list here, perhaps it might work..-->
                ${renderBooks(state.books)}
@@ -34,8 +28,6 @@ function view (state, emit) {
             onclick=${handleClick}>
             Search For A Book
           </button>
-        </section>
-
       </main>
     </body>
   `
