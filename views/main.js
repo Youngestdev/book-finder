@@ -4,6 +4,13 @@ var TITLE = 'book-finder - main'
 
 module.exports = view
 
+function renderBooks (books) {
+  return html`
+    <ul>
+        ${books.map(book => `<li>${book.title}</li>`).join(' ')}
+    </ul>
+    `
+}
 
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
@@ -20,18 +27,12 @@ function view (state, emit) {
           
 
             <!-- TODO: Refactor list here, perhaps it might work..-->
-            
-                ${state.books.map(book => {
-    return `
-                    ${book.title}
-                  `
-  }).join(`/n`)}
-
-
+               ${renderBooks(state.books)}
+    
            <input class="input-reset" id="books" name="books" type="text" />
           <button class="dim ph3 ba bw1 pv2 b--black pointer bg-white"
             onclick=${handleClick}>
-            Emit a click event
+            Search For A Book
           </button>
         </section>
 
