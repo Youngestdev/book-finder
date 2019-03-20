@@ -16,7 +16,7 @@ function renderBooks (books) {
         </div>
       <div class="px-4 py-4">
         <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">
-          ${books.authors.map(author => author)}
+          ${ books.authors !== undefined ? books.authors.map(author => author) : 'No Author'}
          </span>
       </div>
      </div>
