@@ -1,11 +1,11 @@
 {
-  "name": "book-finder",
-  "short_name": "book-finder",
+  "name": "Google Books Finder",
+  "short_name": "google-book-finder",
   "description": "Explore the Google Book's API and a fun project",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000",
-  "theme_color": "#000",
+  "background_color": "#dae1e7",
+  "theme_color": "#4dc0b5",
   "icons": [{
     "src": "/assets/icon.png",
     "type": "image/png",

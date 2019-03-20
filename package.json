@@ -14,7 +14,7 @@
     "choo": "^6.13.1",
     "choo-service-worker": "^2.4.0",
     "sheetify": "^7.3.3",
-    "tachyons": "^4.11.1"
+    "tailwindcss": "^0.7.4"
   },
   "devDependencies": {
     "bankai": "^9.15.0",
