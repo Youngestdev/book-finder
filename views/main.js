@@ -6,18 +6,21 @@ module.exports = view
 
 function renderBooks (books) {
   return html`
-    <ul class="sm:list-reset md:list-reset lg:list-reset xl:list-reset">
-        <li>
-           <h3> Title </h3>
-            ${books.title}
-             <li>
-               <h4> Description </h4>
-                 <p class="leading-none sm:leading-tight md:leading-normal lg:leading-loose xl:leading-normal ...">
-                   ${books.description}
-                 </p>
-            </li>
-        </li>
-    </ul>
+  <div class="flex">
+    <div class="flex-1 border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal mx-4 rounded shadow-md">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">${books.title}</div>
+          <p class="text-grey-darker text-base">
+            ${books.description}
+          </p>
+        </div>
+      <div class="px-4 py-4">
+        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">
+          ${books.authors.map(author => author)}
+         </span>
+      </div>
+     </div>
+  </div>
   `
 }
 
@@ -26,11 +29,11 @@ function view (state, emit) {
 
   return html`
     <body>
-      <main>
+      <main class="container mx-auto">
       
-            <!-- TODO: Refactor list here, perhaps it might work..
-                 TODO: Work on styles, Lol - Install TailWind CSS or Bootstap ?
-                 TODO: Create a tag for books section so I can add a loading state.
+            <!-- 
+                 TODO: Add images, phew! 
+                 TODO: Create a tag for books section so I can add a loading state. - 50% done
             -->
     
           <div class="flex items-center border-b border-b-1 border-teal py-2">

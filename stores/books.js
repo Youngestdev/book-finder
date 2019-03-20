@@ -3,7 +3,7 @@ module.exports = store
 store.storeName = 'books'
 
 function store (state, emitter) {
-  state.books = [{'title': 'Abdulazeez is building something'}, {'title': 'Abdulazeez is building something'}, {'title': 'Abdulazeez is building something'}]
+  state.books = []
 
   emitter.on('DOMContentLoaded', function () {
     emitter.on('books:search', function (input) {
