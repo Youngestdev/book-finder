@@ -6,10 +6,10 @@ module.exports = view
 
 function renderBooks (books) {
   return html`
-  <div class="max-w-md w-full lg:flex" id="renderedBooks">
-    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden margin-b-4" style="background-image: url('${books.imageLinks !== undefined ? books.imageLinks.thumbnail : 'No Author'}')">
-    </div>
+  <div class="flex" id="renderedBooks">    
     <div class="flex-1 border-r border-b margin-b-4 border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal mx-4 rounded shadow-md">
+    <div class="h-48 lg:h-auto lg:w-auto xl:h-auto xl:w-auto flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded xl:rounded-t-none xl:rounded text-center overflow-hidden margin-b-4" style="background-image: url('${books.imageLinks !== undefined ? books.imageLinks.smallThumbnail : 'No Author'}')">
+    </div>
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">${books.title}</div>
           <p class="text-grey-darker text-base">
@@ -66,6 +66,7 @@ function view (state, emit) {
            <br />
             ${state.books.map(book => renderBooks(book))}
           </section>
+          <br/>
       </main>
     </body>
   `
