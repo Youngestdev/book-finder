@@ -6,8 +6,10 @@ module.exports = view
 
 function renderBooks (books) {
   return html`
-  <div class="flex">
-    <div class="flex-1 border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal mx-4 rounded shadow-md">
+  <div class="max-w-md w-full lg:flex" id="renderedBooks">
+    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden margin-b-4" style="background-image: url('${books.imageLinks !== undefined ? books.imageLinks.thumbnail : 'No Author'}')">
+    </div>
+    <div class="flex-1 border-r border-b margin-b-4 border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal mx-4 rounded shadow-md">
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">${books.title}</div>
           <p class="text-grey-darker text-base">
@@ -29,6 +31,22 @@ function view (state, emit) {
 
   return html`
     <body>
+    <style>
+    .loader {
+      border: 4px solid #f3f3f3; /* Light grey */
+      border-top: 4px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+      align-content: center;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    </style>
       <main class="container mx-auto">
       
             <!-- 

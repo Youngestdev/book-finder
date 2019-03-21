@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5e0e7e2-0daf-4a61-a78f-9e25f300ab5f" name="Default Changelist" comment="Finally, it looks better !!">
+    <list default="true" id="b5e0e7e2-0daf-4a61-a78f-9e25f300ab5f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stores/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/stores/books.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/main.js" afterDir="false" />
     </list>
@@ -19,53 +20,57 @@
     <session id="-173563663">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.105" value="1" />
           <entry key="project.open.time.123" value="1" />
           <entry key="project.open.time.197" value="1" />
-          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.55" value="2" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.64" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="59" />
-          <entry key="json" value="4" />
+          <entry key="html" value="1" />
+          <entry key="js" value="64" />
+          <entry key="json" value="5" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="59" />
+          <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="64" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="StandardJSService" value="9" />
+          <entry key="StandardJSService" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="5736" />
+          <entry key="html" value="1" />
+          <entry key="js" value="6134" />
           <entry key="json" value="60" />
-          <entry key="txt" value="415" />
+          <entry key="txt" value="440" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="170" />
+          <entry key="HTML" value="201" />
           <entry key="JSON" value="60" />
-          <entry key="JavaScript" value="5566" />
-          <entry key="PLAIN_TEXT" value="415" />
+          <entry key="JavaScript" value="5934" />
+          <entry key="PLAIN_TEXT" value="440" />
         </counts>
       </usages-collector>
     </session>
@@ -73,19 +78,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/main.js">
+        <entry file="file://$PROJECT_DIR$/stores/books.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stores/books.js">
+        <entry file="file://$PROJECT_DIR$/views/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="75">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,6 +103,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>recipe</find>
+      <find>fa</find>
     </findStrings>
     <replaceStrings>
       <replace>book</replace>
@@ -117,9 +126,10 @@
         <option value="$PROJECT_DIR$/components/Books.js" />
         <option value="$PROJECT_DIR$/sw.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/views/main.js" />
         <option value="$PROJECT_DIR$/stores/books.js" />
+        <option value="$PROJECT_DIR$/views/main.js" />
       </list>
     </option>
   </component>
@@ -158,16 +168,6 @@
             <path>
               <item name="book-finder" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-finder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-finder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-finder" type="462c0819:PsiDirectoryNode" />
-              <item name="stores" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-finder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-finder" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -232,7 +232,9 @@
       <workItem from="1553056817273" duration="693000" />
       <workItem from="1553099690551" duration="389000" />
       <workItem from="1553103102338" duration="3959000" />
-      <workItem from="1553108871935" duration="3832000" />
+      <workItem from="1553108871935" duration="4384000" />
+      <workItem from="1553155511626" duration="7320000" />
+      <workItem from="1553164502699" duration="1935000" />
     </task>
     <task id="LOCAL-00001" summary="Okay, few changes before the app went beserk!">
       <created>1552936692751</created>
@@ -290,11 +292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553110237213</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Cleaning more stuffs.">
+      <created>1553112988005</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1553112988005</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35765000" />
+    <option name="totallyTimeSpent" value="45572000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,7 +322,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" weight="0.535473" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49920383" visible="true" weight="0.28843105" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49920383" visible="true" weight="0.28684628" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5007962" side_tool="true" weight="0.34548336" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3280507" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -382,7 +391,8 @@
     <MESSAGE value="Tags that aren't useful." />
     <MESSAGE value="Updated manifest and view." />
     <MESSAGE value="Finally, it looks better !!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally, it looks better !!" />
+    <MESSAGE value="Cleaning more stuffs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning more stuffs." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -419,13 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/choo-service-worker/example.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578" />
@@ -439,31 +442,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
+    <entry file="file://$PROJECT_DIR$/sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="135">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.js">
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state>
+          <caret column="29322" lean-forward="true" selection-start-column="29322" selection-end-column="29322" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stores/books.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 {
   "name": "Google Books Finder",
-  "short_name": "google-book-finder",
+  "short_name": "book-finder",
   "description": "Explore the Google Book's API and a fun project",
   "start_url": "/",
   "display": "standalone",
